@@ -1,0 +1,548 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Sora';
+    background-color: var(--primary-color);
+}
+.logo{
+    font-weight: 600;
+}
+/**nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}**/
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70% auto;
+}
+.horizMenuBar{
+    padding: 0 80px;
+}
+#icon{
+    cursor: pointer;
+    display: inline-flex;
+   margin-top: 16px;
+   margin-left: 15px;
+}
+
+li{
+    height: 53px;
+    margin-top: 20px;
+    font-size: 17px;
+    
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+}
+nav a:hover{
+    background-color: var(--primary-color);
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color:var(--tetiary-color) ;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.menu-button{
+    display: none;
+}
+
+@media(max-width:800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block ;
+    }  
+    .horizMenuBar{
+        padding: 0;
+    }
+   
+
+}
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+        display: none;
+    }
+    
+}
+.mainBody{
+    width: 60%;
+    margin: 170px auto;
+}
+.mainHeading{
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--secondary-color);
+}
+.gap{
+    color: rgba(101, 101, 101, 0.312);
+}
+.underText{
+    width: 500px;
+    margin: 20px 0;
+    line-height: 30px;
+    font-size: 17px;
+    color: var(--secondary-color);
+}
+.mainButton{
+    padding: 10px;
+    width:200px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to right, rgb(197,255,150,1),rgb(169,248,104,1));
+}
+.mainButton:hover{
+ cursor: pointer;
+ margin-top: -2px;
+}
+.svig{
+   position: absolute;
+   margin-left: 7px;
+   margin-top: -2px;
+   color: var(--secondary-color);;
+}
+.imageSection{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+.profile-image{
+    display: none;
+}
+.imageSections:hover{
+     cursor: pointer;
+     height: 85vh;
+}
+.weeklyProject{
+    font-size: 19px;
+    font-weight: 700;
+    margin: 70px 25%;
+}
+.line{
+    position: absolute;
+    margin: -16px 230px;
+}
+.exploreStudy{
+    width: 63%;
+    height: 50vh;
+    background-color: #9282f7;
+    border-radius: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--primary-color);
+    text-align: left;
+}
+.exploreImage{
+   margin-top: 15px;
+   margin-left: -20px;
+}
+.exploreRight{
+    width: 370px;
+    margin-top: 20px;
+    margin-left: -40px;
+}
+h6{
+    margin: 25px 0;
+}
+h3{
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 34px;
+    margin-bottom: 25px;
+}
+.exploreParag{
+    font-size: 13px;
+    margin-bottom: 13px;
+}
+.horiZontal{
+    margin-bottom: 12px;
+}
+.secondButton{
+    padding: 10px;
+    width:200px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to right, rgb(197,255,150,1),rgb(169,248,104,1));
+}
+.secondButton:hover{
+    cursor: pointer;
+    margin-top: -2px;
+}
+.svigs{
+    position: absolute;
+    margin-left: 7px;
+    margin-top: -3px;
+}
+.connectPage{
+    width: 90%;
+    height: 60vh;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: left;
+    border-radius: 30px;
+    padding: 30px 35px;
+    margin: 120px auto;
+}
+.connectLeft{
+    width: 700px;
+    padding: 60px 40px;
+}
+h2{
+    font-size: 3.2rem;
+    margin-bottom: 25px;
+}
+.connectParag{
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 25px;
+    width: 500px;
+}
+.thirdButton{
+    padding: 10px;
+    width:200px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to right, rgb(197,255,150,1),rgb(169,248,104,1)); 
+}
+.footerNav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-size: 15px;
+    margin-top: -70px;
+    color: var(--secondary-color);
+}
+.footNav{
+    display: flex;
+    gap: 30px;
+    margin-right: 60px;
+}
+.footerName{
+    font-weight: 600;
+    margin-left: 55px;
+}
+.footNav a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--secondary-color); 
+}
+.footNav a:hover{
+    font-weight: 700;
+}
+
+
+:root{
+    --primary-color: #fdfdfd;
+    --secondary-color: #212121;
+    --tetiary-color: #ffffff4d;
+}
+.dark-theme{
+    --primary-color: #050505;
+    --secondary-color: #ffffff;
+    --tetiary-color: #393838f6;
+}
+
+@media(max-width:480px){
+    .mainBody{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 100px auto;
+        padding: 0 5px;
+    }
+    .mainHeading{
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 44px;
+    }
+    .underText{
+        display: block;
+        width: 100%;
+        margin: 20px auto;
+    }
+    .imageSection{
+        display: none;
+    }
+    .profile-image{
+        display: block;
+        border-radius: 30px;
+        padding: 20px;
+        height: 550px;
+        margin: auto;
+    }
+    div.slide-left {
+        width:100%;
+        overflow:hidden;
+      }
+      div.slide-left div.inner {
+        animation: slide-left 1s;
+        margin-top:0%;
+      }
+      
+      @keyframes slide-left {
+        from {
+          margin-left: 100%;
+        }
+      
+        to {
+          margin-left: 0%;
+        }
+      }
+      .weeklyProject{
+        display: block;
+        width: 100%;
+        font-size: 1.7rem;
+        font-weight: 700;
+        text-align: center;
+        margin: 50px auto;
+    }
+    .line{
+        position: relative;
+        margin: 16px auto;
+        display: block;
+        width: 50%;
+    }
+    .exploreStudy{
+        width: 90%;
+        height: 110vh;
+        border-radius: 0%;
+        display: block;
+        text-align: center;
+        border-radius: 40px;
+        
+    }
+    .exploreImage{
+       position: absolute;
+       margin-top: 353px;
+       margin-left: 37px
+    }
+    .exploreRight{
+       position: absolute;
+        margin:38px 20px;
+    }
+    h6{
+        font-size: 17px;
+    }
+    h3{
+        font-weight: 600;
+        font-size: 2.0rem;
+        line-height: 34px;
+        margin-bottom: 25px;
+    }
+    .connectPage{
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        border-radius: 0px;
+        margin: 150px auto;
+        margin-bottom: 40px;
+    }
+    .connectLeft{
+        width: 100%;
+    }
+    .connectParag{
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    
+    .footerNav{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        font-size: 14px;
+        margin: 20px 0;
+    }
+    .footNav{
+        display: flex;
+        gap: 30px;
+        margin-right: 60px;
+    }
+    .footerName{
+        font-weight: 600;
+        margin-left: 55px;
+        visibility: hidden;
+    }
+    .footerName:after{
+        content:'Abdul S' ;
+        visibility: visible;
+        position: absolute;
+        margin-top: -53px;
+    }
+    .footNav a{
+        font-size: 14px;
+    }
+}
+@media(min-width:481px) and (max-width: 800px){
+    nav ul{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .mainBody{
+        display: block;
+        width: 90%;
+        text-align: center;
+        margin: 100px auto;
+        padding: 0 5px;
+    }
+    .mainHeading{
+        font-size: 2.9rem;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .underText{
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+    }
+    .imageSection{
+        display: none;
+    }
+    .profile-image{
+        display: block;
+        border-radius: 30px;
+        padding: 20px;
+        height: 560px;
+        margin: auto;
+    }
+    div.slide-left {
+        width:100%;
+        overflow:hidden;
+      }
+      div.slide-left div.inner {
+        animation: slide-left 1s;
+        margin-top:0%;
+      }
+      
+      @keyframes slide-left {
+        from {
+          margin-left: 100%;
+        }
+      
+        to {
+          margin-left: 0%;
+        }
+      }
+      .weeklyProject{
+        display: block;
+        width: 100%;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-align: center;
+        margin: 50px auto;
+    }
+    .line{
+        position: relative;
+        margin: 16px auto;
+        display: block;
+        width: 50%;
+    }
+    .exploreStudy{
+        width: 90%;
+        height: 125vh;
+        border-radius: 0%;
+        display: block;
+        text-align: center;
+        border-radius: 40px;
+        
+    }
+    .exploreImage{
+      
+    }
+    .exploreRight{
+       width: 60%;
+       margin: auto;
+    }
+    h6{
+        font-size: 15px;
+    }
+    h3{
+        font-weight: 600;
+        font-size: 2.0rem;
+        line-height: 34px;
+        margin-bottom: 25px;
+    }
+    .connectPage{
+        width: 90%;
+        height: 100vh;
+        text-align: center;
+        border-radius: 40px;
+        margin: 120px auto;
+        margin-bottom: 40px;
+    }
+    .connectLeft{
+        width: 100%;
+    }
+    .connectParag{
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    
+    .footerNav{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        font-size: 14px;
+        margin: 20px 0;
+    }
+    .footNav{
+        display: flex;
+        gap: 30px;
+        margin-right: 60px;
+    }
+    .footerName{
+        font-weight: 600;
+        margin-left: 55px;
+        visibility: visible;
+    }
+    .footNav a{
+        font-size: 14px;
+    }
+}
