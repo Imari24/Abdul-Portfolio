@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdulkadiri Sumaila</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>   
+            <li><a href="project-page.html">Projects</a></li>
+            <li><a href="">Technical Articles</a></li>
+            <li><a href="">My Story</a></li>
+            <li><a href="#">Resume</a></li>
+            
+        </ul>
+        <ul class="horizMenuBar">
+        <li><a href="index.html" class="Logo"><span class="logo">Abdulkadiri</span>.Sumaila</a></li>   
+        <li class="hideOnMobile"><a href="project-page.html">Projects</a></li>
+        <li class="hideOnMobile"><a href="#">Technical Articles</a></li>
+        <li class="hideOnMobile"><a href="#">My Story</a></li>
+        <li class="hideOnMobile"><a href="#">Resume</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000" id="hamBurger"><path d="M160-360v-80h640v80H160Zm0-160v-80h640v80H160Z"/></svg></a></li>
+        <img src="Images/black-moon.png" alt="moon" width="20px" height="20px" id="icon" class="hideOnMobile">
+    </ul>
+    
+</nav>
+
+<div class="projectBody">
+    <h1 class="projectHeading">"Form follows function - that has been <span class="gap">misunderstood.</span> Form and function should be one, joined in a spiritual union. "</h1>
+    <p class="projectUnderText">&#x2022; Frank Lloyd Wright</p>
+</div>
+
+<div class="featuredProjects">
+    <p>Featured Projects</p><img src="Images/Line.png" alt="line" width="35%" class="secondLine">
+</div>
+
+
+<div class="projectImages">
+    <div class="card"><a href="#"><img src="Images/First Project.png" alt="Project Image" width="500px" height="500px"></a></div>
+    <div class="card"><a href="#"><img src="Images/Second Project.png" alt="Project Image" width="500px" height="500px"></a></div>
+    <div class="card"><a href="#"><img src="Images/Third Project.png" alt="Project Image" width="500px" height="500px"></a></div>
+    <div class="card"><a href="#"><img src="Images/Fourth Project.png" alt="Project Image" width="500px" height="500px"></a></div>
+</div>
+    
+
+
+<div class="connectPage">
+    <div class="connectLeft">
+    <h2>Don't be a stranger, let's connect like Wi-Fi</h2>
+    <p class="connectParag">Shoot me an email at sumaila.abdulkadiri@yahoo.com or Download my <span>Resume</span>
+      for more information.    </p>
+    <button class="thirdButton">Find me on LinkedIn <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" class="svigs" width="20px" fill="#00000"><path d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z"/></svg> </button>
+</div>
+
+</div>
+
+<div class="footerPage">
+    <footer class="footerNav"> 
+        <div class="footerName"> <p>&copy 2023 Abdulkadiri Sumaila</p></div>
+        <div class="footNav"><a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Behance</a></div>
+       
+    </footer>
+</div>
+
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+}
+function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+}
+
+
+</script>
+<script>
+     var icon = document.getElementById("icon");
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+
+    if(document.body.classList.contains("dark-theme")){
+        icon.src ="Images/light-mode.png";
+    }else{
+        icon.src ="Images/black-moon.png";
+    }
+}
+</script>
+</body>
+</html>
