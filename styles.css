@@ -606,7 +606,7 @@ h2{
     gap: 40px;
     width: 10%;
     margin: 40px 0;
-    padding: 0 13%;
+    padding: 0 17%;
 }
 .card:hover{
     margin-top: -10px;
@@ -641,7 +641,8 @@ h2{
         grid-template-rows: 1fr 1fr;
         gap: 7px;
         margin-top: 60px;
-        margin-left: -78px;
+        margin-left: -57px;
+
     }
     .card{
      width: 10%;
@@ -659,7 +660,7 @@ h2{
     .footerName:after{
         position: absolute;
         margin-top: -51px;
-        margin-left: -0px;
+        margin-left: -25px;
     }
 }
 @media(min-width:481px) and (max-width:800px){
