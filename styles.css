@@ -639,9 +639,9 @@ h2{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 10px;
+        gap: 7px;
         margin-top: 60px;
-        margin-left: -73px;
+        margin-left: -78px;
     }
     .card{
      width: 10%;
