@@ -26,9 +26,12 @@ nav ul{
 .horizMenuBar{
     padding: 0 80px;
 }
+#hamBurger{
+    fill: var(--secondary-color);
+}
 #icon{
     cursor: pointer;
-    display: inline-flex;
+    display: inline;
    margin-top: 16px;
    margin-left: 15px;
 }
@@ -118,7 +121,7 @@ nav li:first-child{
     font-size: 17px;
     border-radius: 10px;
     border: none;
-    color: var(--secondary-color);
+    color: black;
     background-image: linear-gradient(to right, rgb(197,255,150,1),rgb(169,248,104,1));
 }
 .mainButton:hover{
@@ -128,8 +131,8 @@ nav li:first-child{
 .svig{
    position: absolute;
    margin-left: 7px;
-   margin-top: -2px;
-   color: var(--secondary-color);;
+   margin-top: -1px;
+   color: black;
 }
 .imageSection{
     display: flex;
@@ -140,6 +143,7 @@ nav li:first-child{
 }
 .profile-image{
     display: none;
+    margin: auto;
 }
 .imageSections:hover{
      cursor: pointer;
@@ -156,7 +160,7 @@ nav li:first-child{
 }
 .exploreStudy{
     width: 63%;
-    height: 50vh;
+    height: 60vh;
     background-color: #9282f7;
     border-radius: 30px;
     margin: auto;
@@ -166,12 +170,16 @@ nav li:first-child{
     text-align: left;
 }
 .exploreImage{
-   margin-top: 15px;
+   margin-top: 88px;
    margin-left: -20px;
+
+}
+.exploreImage2{
+display: none;
 }
 .exploreRight{
     width: 370px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: -40px;
 }
 h6{
@@ -197,7 +205,7 @@ h3{
     font-weight: 500;
     border-radius: 10px;
     border: none;
-    color: var(--secondary-color);
+    color: black;
     background-image: linear-gradient(to right, rgb(197,255,150,1),rgb(169,248,104,1));
 }
 .secondButton:hover{
@@ -240,7 +248,7 @@ h2{
     font-weight: 500;
     border-radius: 10px;
     border: none;
-    color: var(--secondary-color);
+    color: black;
     background-image: linear-gradient(to right, rgb(197,255,150,1),rgb(169,248,104,1)); 
 }
 .footerNav{
@@ -275,7 +283,7 @@ h2{
 :root{
     --primary-color: #fdfdfd;
     --secondary-color: #212121;
-    --tetiary-color: #ffffff4d;
+    --tetiary-color: #ffffff89;
 }
 .dark-theme{
     --primary-color: #050505;
@@ -284,6 +292,9 @@ h2{
 }
 
 @media(max-width:480px){
+    #icon{
+      margin-right: 30px;
+    }
     .mainBody{
         display: block;
         width: 100%;
@@ -291,6 +302,7 @@ h2{
         margin: 100px auto;
         padding: 0 5px;
     }
+    
     .mainHeading{
         font-size: 2.5rem;
         font-weight: 700;
@@ -306,10 +318,10 @@ h2{
     }
     .profile-image{
         display: block;
-        border-radius: 30px;
-        padding: 20px;
+        border-radius: 40px;
+        padding: 10px;
         height: 550px;
-        margin: auto;
+        margin: 0 auto;
     }
     div.slide-left {
         width:100%;
@@ -374,7 +386,7 @@ h2{
         width: 100%;
         height: 100vh;
         text-align: center;
-        border-radius: 0px;
+        border-radius: 40px;
         margin: 150px auto;
         margin-bottom: 40px;
     }
@@ -412,7 +424,8 @@ h2{
         content:'Abdul S' ;
         visibility: visible;
         position: absolute;
-        margin-top: -53px;
+        margin-top: -49px;
+        margin-left: -50px;
     }
     .footNav a{
         font-size: 14px;
