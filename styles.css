@@ -51,7 +51,7 @@ nav a{
     color: var(--secondary-color);
 }
 nav a:hover{
-    background-color: var(--primary-color);
+    background-color: #b9b9b91f;
 }
 nav li:first-child{
     margin-right: auto;
@@ -716,7 +716,7 @@ h2{
     width: 80%;
     text-align: center;
     margin: auto;
-    height: 100vh;
+    height: 90vh;
     margin-top: 70px;
     color: var(--secondary-color);
 }
@@ -727,7 +727,7 @@ h2{
     font-size: 12px;
     border-spacing: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-weight: 300px;
     color: #555555a4;
     line-height: 17px;
    border-spacing: 5px;
@@ -762,6 +762,7 @@ font-size: 9px;
     line-height: 30px;
     color: var(--grey-color);
     margin-bottom: 60px;
+    font-weight: 300;
 }
 .intoHeading{
     font-weight: 400;
@@ -776,6 +777,7 @@ font-size: 9px;
     color: var(--secondary-color);
     margin: auto;
     margin-bottom: 100px;
+    font-weight: 300;
 }
 .statementHeading{
     font-size: 25px;
@@ -792,6 +794,7 @@ font-size: 9px;
     display: flex;
     justify-content: space-between;
     color: var(--secondary-color);
+    font-weight: 300;
 }
 .empathyHeading{
     width: 400px;
@@ -838,7 +841,7 @@ line-height: 30px;
 }
 .painPoint{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     width: 250px;
     text-align: left;
     margin: 0 auto;
@@ -852,6 +855,7 @@ line-height: 30px;
     color: var(--secondary-color);
     margin: auto;
     margin-bottom: 100px;
+    font-weight: 300;
 }
 .dataHeading{
     font-size: 25px;
@@ -868,6 +872,7 @@ line-height: 30px;
     text-align: justify;
     margin-bottom: 150px;
     line-height: 30px;
+    font-weight: 300;
 }
 .userStory{
     width: 80%;
@@ -883,6 +888,7 @@ line-height: 30px;
     color: var(--secondary-color);
     line-height: 30px;
     margin-bottom: 60px;
+    font-weight: 300;
 }
 .designHeading{
     width: 400px;
@@ -910,7 +916,7 @@ line-height: 30px;
     font-size: 16px;
 }
 .dataDrawings{
-    width: 50% ;
+    width: 60% ;
     margin: auto;
 }
 .phoneImage{
