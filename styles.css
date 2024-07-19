@@ -922,7 +922,22 @@ line-height: 30px;
     width: 700px;
     margin: auto;
 }
-
+.fourthButton{
+    padding: 10px;
+    width:200px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    background-image: linear-gradient(to right, rgb(197,255,150,1),rgb(169,248,104,1));  
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 260px;
+}
+.fourthButton{
+    margin-top: -2px;
+}
 @media(max-width:480px){
     .researchDesignMain{
         display: block;
@@ -1107,5 +1122,9 @@ line-height: 30px;
     .device{
         width: 300px;
     }
-    
+    .fourthButton{
+        width: 100%;
+        margin: auto;
+        margin-top: 40px ;
+    }
 }
